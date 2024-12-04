@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "dbbank_backend": {
+      "main": "src/dbbank_backend/main.mo",
+      "type": "motoko"
+    },
+    "dbbank_frontend": {
+      "dependencies": [
+        "dbbank_backend"
+      ],
+      "source": [
+        "src/dbbank_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "dbbank_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
